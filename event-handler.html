@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Event handler</title>
+</head>
+<body>
+    <p id="para-1">
+        Coding creates a set of instructions for computers to follow.
+        These instructions determine what actions a computer can and cannot take.
+        Computer programmers can also tell computers how to process data in better, faster ways.
+    </p>
+
+    <button onclick="handleclick();">click me</button>
+</body>
+
+<script>
+    //click function
+    function handleclick()
+    {
+        alert('i was clicked');
+    }
+    document.querySelector('button').onclick=handleclick;
+
+    //addeventlistener
+    document.getElementById("para-1").addEventListener('mouseover',function(){
+        console.log('mouse is over para')
+    })
+
+    
+</script>
